@@ -14,12 +14,12 @@ int main() {
     int frameCount = 0; // To keep track of the number of frames captured for the video file
 
 
-    int numPendulums = 1;
+    int numPendulums = 30;
     std::vector<DoublePendulum> pendulumList;
 
     for (int i = 0; i < numPendulums; i++) {
 
-      DoublePendulum doublependulum(window, 2.2, 2.6+ static_cast<float>(i)/6000, 0, 0);
+      DoublePendulum doublependulum(window, 3.1, 3.1+ static_cast<float>(i)/6000, 0, 0);
 
       pendulumList.push_back(doublependulum);
     }
@@ -28,7 +28,7 @@ int main() {
 
     std::deque<std::vector<sf::Vector2f>> trails;
 
-    int maxTrailLength = 130;
+    int maxTrailLength = 200;
 
     // Main loop
     while (window.isOpen()) {
@@ -47,7 +47,7 @@ int main() {
         }
         else {
           deltaTime = clock.restart().asSeconds();
-          //deltaTime = 0.1;
+          deltaTime = 0.02;
         }
 
         // Render
