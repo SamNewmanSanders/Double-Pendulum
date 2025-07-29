@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Personal Computing Stuff\C++\Visual Studio\Double Pendulum\Double Pendulum\main.cpp(46,23): warning C4305: '=': truncation from 'double' to 'float'
-  Double Pendulum.vcxproj -> C:\Personal Computing Stuff\C++\Visual Studio\Double Pendulum\x64\Debug\Double Pendulum.exe
